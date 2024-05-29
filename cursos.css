@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+body {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #343333;  
+}
+@media (max-width: 600px) {
+  body {
+      height: 65px;
+  }
+}
+
+/* SECCION DESPLAZAMIENTO   */
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 210px;
+}
+.box .infobox {
+    animation-name: leftslide;
+    animation-duration: 1.0s;
+    max-height: 500px;
+    max-width: 50%;
+    overflow: hidden;    
+}     
+.box .infobox-slimtext {
+    margin: 24px 23px;    
+    background: linear-gradient(93.51deg, #fe4040 2.84%, white 99.18%);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.box .infobox-btnwrapper {
+    display: flex;
+}   
+.box .display {
+    animation-name: rightslide;
+    animation-duration: 0.8s;
+    padding: 1px;   
+    max-height: 550px;
+    max-width: 50%;
+    overflow: hidden;
+}
+.box .display-az {
+    object-fit: cover;
+    flex-shrink: 125px;
+    width: 200px;
+    height: auto;    
+}
+@keyframes leftslide {
+    from {
+      transform: translateX(-700px);
+  }
+    to {
+      transform: translateX(0px);
+    }
+}
+@keyframes rightslide {
+    from {
+      transform: translateX(650px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+}
+
+/*  Responsive deslizable  */
+
+@media (max-width: 600px) {
+  .box .infobox-slimtext {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+  }
+  .box .display-az {
+    object-fit: cover;
+    flex-shrink: 25px;
+    margin: 24px 23px;  
+    width: 100px;
+    height: auto;
+  }
+}
+
+ /* cursos */
+main {
+  display: grid;
+  position: absolute;
+  top: 350px;
+}
+h4 {
+  color: #ffeb3b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.eachcard {
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-position: center !important;
+  background-size: cover !important;
+  text-align:justify;
+}
+.eachcard h3 {
+  font-family: 'Oswald', sans-serif;
+  margin: 0 0 0.8rem;
+  color: #fe4040;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.eachcard p {
+  font-size: 1.1rem; 
+  font-family: 'Oswald', sans-serif;  
+  color: #e4e4e4;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.eachcard address {
+  font-size: 1rem;
+  font-family: Poppins;
+  color: #ffffff;
+  font-weight: 500;
+}
+.eachcard address i {
+  color: #f44336;
+}
+button {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f44336;
+  border-radius: 10%;
+}
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/* Adding different background to each cards */
+.card1 {
+  background: linear-gradient(45deg, #000000b0, #0000009e),
+    url(./img/amapolas.jpg);
+}
+.card2 {
+  background: linear-gradient(45deg, #000000b0, #0000009e),
+   url(./img/liriodeagua.jpg);
+}
+.card3 {
+  background: linear-gradient(45deg, #000000b0, #0000009e),
+    url(./img/jardin.jpg);
+}
+.card4 {
+  background: linear-gradient(45deg, #000000b0, #0000009e),
+    url(./img/noche.jpg);
+}
+.card5 {
+  background: linear-gradient(45deg, #000000b0, #0000009e),
+  url(./img/noche.jpg);
+}
+.card6 {
+  background: linear-gradient(45deg, #000000b0, #0000009e),
+    url(https://source.unsplash.com/o6UVPje41Lg);
+}
+
+@media (max-width: 600px) {
+  main {
+  top: 250px;
+  }
+  .eachcard p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+  .eachcard h3 {
+    font-size: 1rem; 
+    text-align: center;
+  }
+}
+#botoncurso {
+  background: red;
+}
+
+.footer_1 { 
+  background-color: #f8f8f8;  
+  width: 100%; 
+}
+
+.footer-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "nav newsletter" "social-links social-links" "copyright copyright";
+}
+
+
