@@ -6,7 +6,8 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: #343333;  
+  /*background: #343333;  */
+  background: black;
 }
 @media (max-width: 600px) {
   body {
@@ -108,8 +109,9 @@ h4 {
   border-radius: 1rem;
   background-position: center !important;
   background-size: cover !important;
-  text-align:justify;
+  text-align:justify;  
 }
+
 .eachcard h3 {
   font-family: 'Oswald', sans-serif;
   margin: 0 0 0.8rem;
@@ -145,23 +147,23 @@ button:hover {
 }
 /* Adding different background to each cards */
 .card1 {
-  background: linear-gradient(45deg, #000000b0, #0000009e),
+  background: linear-gradient(45deg, #000000b0, #f777779e),
     url(./img/amapolas.jpg);
 }
 .card2 {
-  background: linear-gradient(45deg, #000000b0, #0000009e),
+  background: linear-gradient(45deg, #000000b0, #31fc039e),
    url(./img/liriodeagua.jpg);
 }
 .card3 {
-  background: linear-gradient(45deg, #000000b0, #0000009e),
+  background: linear-gradient(45deg, #000000b0, #0401a99e),
     url(./img/jardin.jpg);
 }
 .card4 {
-  background: linear-gradient(45deg, #000000b0, #0000009e),
+  background: linear-gradient(45deg, #000000b0, #015f629e),
     url(./img/noche.jpg);
 }
 .card5 {
-  background: linear-gradient(45deg, #000000b0, #0000009e),
+  background: linear-gradient(45deg, #000000b0, #9eaf019e),
   url(./img/noche.jpg);
 }
 .card6 {
