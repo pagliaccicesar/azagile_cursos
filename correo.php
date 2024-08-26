@@ -1,8 +1,7 @@
 <?php 
 if(isset($_POST['email'])) { 
-    $email_to = "contacto@azagile.ar";
-    /*$email_to = "pagliaccicesar@gmail.com";*/  
-    $email_subject = "Te quiero contactar desde wwww.azagile.ar";   
+    $email_to = "contacto@azagile.com.ar";   
+    $email_subject = "Te quiero contactar desde wwww.azagile.com.ar";   
  
     function died($error) {
         echo '<body style="background-color:#fe4040;text-align:center;font-family: Trebuchet MS, sans-serif";>';
@@ -10,7 +9,7 @@ if(isset($_POST['email'])) {
         echo "<h1>AZAGILE</h1><h2>Existe un error en el dato ingresado.</h2>";         
         echo $error."<br /><br />"; 
         echo "<h2>Presione aquí debajo para volver al formulario.</h2><br />";
-		echo "<button style=background-color:gold;border-radius:20%><p><a href='https://azagile.ar/index.html'>VOLVER</a></p></button>";  
+		echo "<button style=background-color:gold;border-radius:20%><p><a href='https://azagile.com.ar/index.html'>VOLVER</a></p></button>";  
     
         die(); 
     }
@@ -54,7 +53,7 @@ echo "</script>";
 
 
 
-header("Location: https://www.azagile.ar/index.html" );  
+header("Location: https://www.azagile.com.ar/index.html" );  
 exit();
  
 //<!-- include your own success html here --> 
