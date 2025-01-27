@@ -142,12 +142,33 @@ a {
   }
 }
 
-.copyright { 
+.banner-planes { 
+  flex-basis: 100%;
+  text-align: center;
+  color: var(--darkerGrey);
+  font-size: small;
+  
   height: 130px;    
   background: url("./img/huella-az.png");
   background-position: center;     
   background-size: cover; 
 }
+@media (min-width: 45em) {
+
+  .banner-planes {
+    font-size:medium;
+    grid-area: copyright;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
 h4 {
   font-family: "Roboto", serif;
   font-weight: 1000;
