@@ -142,34 +142,75 @@ a {
   }
 }
 
+.copyright { 
+  height: 130px;    
+  background: url("./img/huella-az.png");
+  background-position: center;     
+  background-size: cover; 
+}
+h4 {
+  font-family: "Roboto", serif;
+  font-weight: 1000;
+  display: inline;
+  position: relative;
+  text-align: justify;
+  
+  text-align: center;
+  font-size: xx-large;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  font-style: italic;
+}
+ h6 { 
+  display: inline;
+  position: relative;
+  text-align: justify;
+  font-size: small;
+  line-height: 0.05;
+  color: whitesmoke;
+  
+}
+h5 {
+  display: inline;
+  position: relative;
+  text-align: justify;  
+  line-height: 0.05;
+  color: white; 
+}
 
+/*.copyright {
+  line-height: 0.1;
+ 
+  height: 100px;    
+  background: url("./img/huella-az.png") 100% no-repeat;     
+  background-size: cover; 
+}*/
+ 
 
 /* Intro */
 .intro {
-  margin-top: 2rem;
-  padding: 0 1em;
+  /*margin-top: 2rem;*/
+  padding: 0em 1em;
 }
-
 .intro__title {
   margin: 0;
   font-family: var(--familyRobotoSlab);
-  font-size: 2.4rem;
+  font-size: medium; 
   font-weight: normal;
-  line-height: 1.3;
+  /*line-height: 1.3;*/
+  line-height: 0.6;
   color: var(--darkPurple);
 }
 
 .intro__subtitle {
   margin: 1.2rem 0;
-  font-size: 0.9rem;
-  /*color: var(--darkGrey);*/
   color:#f8f8f8;
 }
 
 .button {
-  display: inline-block;
-  padding: 0.3em 0.7em;
-  font-size: 0.8rem;  
+  display: inline-block;  
+  padding: 0.2em 0.5em;
+  font-size: 0.6rem;
   background-color: #fe4040;  
   color: var(--white);
   border-radius: 3px;
@@ -178,19 +219,41 @@ a {
 .button:hover {
   background-color: #fe4040;
 }
-
-
 .intro__illustration {
-  max-width: 100%;
-  margin: 2rem 0;
+  max-width: 50%; 
+  margin: 0.2rem 0;
 }
 
 @media (max-width: 511px) {
-  .intro__illustration {
+.intro__illustration {
       width: 40%;
       height: auto;
       margin: 2rem -1rem;
-
+  }
+.intro {
+      margin: 1rem auto 0;
+      display: grid;
+      grid-template-columns: 1fr ;
+      grid-gap: 5px;
+  }
+.intro__title {
+      font-size: x-large;     
+      font-weight: normal;
+  }
+.intro__subtitle {
+      margin: 1.2rem 0;    
+      font-size: 0.8rem; 
+  }
+.button {
+      display: block;
+      padding: 0.2em 0.5em;
+      font-size: 0.6rem;  
+      justify-self: start;
+      align-self: start;
+}
+img {
+      justify-self: center;
+      align-self: center;
   }
 }
 @media (min-width: 512px) {
@@ -236,12 +299,14 @@ a {
   }
 
   .intro__title {
-    font-size: 4rem;
+    /*font-size: 4rem;*/
+    font-size: 2.5rem ;
     margin: 0;
   }
 
   .intro__subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    /*font-size: 1.2rem;*/
   }  
 
   .button {
@@ -457,10 +522,43 @@ a {
   }
 }
 
+/*************    planes   ***********/
 
+.planes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 3rem;  
+}
+
+@media (width > 800px) {
+  .banner-vertical {
+    display: none;
+  }
+  .banner-horizontal img {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;    
+  }
+}
+@media (width < 799px) {
+  .planes {
+    padding-top: 3rem;    
+  }
+  .banner-horizontal {
+    display: none;
+  }
+  .banner-vertical img {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;    
+  }
+}
 
 /************************** cards   **********************/
-
 
 :root {
   --d: 700ms;
