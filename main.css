@@ -182,6 +182,15 @@ h4 {
   text-transform: uppercase;
   font-style: italic;
 }
+h4 a:hover {
+  cursor: pointer;
+}
+h6 a:hover {
+  cursor: pointer;
+}
+h5 a:hover {
+  cursor: pointer;
+}
  h6 { 
   display: inline;
   position: relative;
